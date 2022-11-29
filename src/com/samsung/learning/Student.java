@@ -2,7 +2,6 @@ package com.samsung.learning;
 
 public class Student extends User implements Printer{
     String group;
-    String number;
 
     public Student(String name, String lname, String otname, String number, String group) {
         super(name, lname, otname, number);
@@ -16,8 +15,7 @@ public class Student extends User implements Printer{
     }
 
     public Student(Student student) {
-        super(student.name, student.lname, student.otname, student.number);
-        this.group = student.group;
+        this(student.name, student.lname, student.otname, student.number, student.group);
     }
 
     public String getGroup() {

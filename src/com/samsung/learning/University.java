@@ -13,16 +13,20 @@ public class University implements Printer {
 
     @Override
     public void printInfoToConsoleSuperKpacuBo() {
+        System.out.println("<<УНИВЕРСИТЕТ");
+        System.out.println("Адрес: " + adres);
         System.out.println("<<СТУДЕНТЫ:");
         for (int i = 0; i < spisok_students.length; i++) {
             spisok_students[i].printInfoToConsoleSuperKpacuBo();
             System.out.println("\n");
         }
-        System.out.println("\n");
+        System.out.println(">>\n");
         System.out.println("<<ПРЕПОДАВАТЕЛИ:");
         for (int i = 0; i < spisok_prepodov.length; i++) {
             spisok_prepodov[i].printInfoToConsoleSuperKpacuBo();
             System.out.println("\n");
         }
+        System.out.println(">>");
+        System.out.println(">>");
     }
 }
